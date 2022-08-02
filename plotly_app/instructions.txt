@@ -1,0 +1,40 @@
+# make requirements of folder:
+pip freeze > requirements.txt
+pipreqs /path/to/project
+
+
+with Procfile:
+cd folder
+heroku login
+git add .
+git status
+git commit -m "your message"
+heroku create my-app-name --buildpack heroku/python
+git push heroku master
+heroku open
+
+
+
+# Clear the build cache
+heroku plugins:install heroku-builds
+heroku builds:cache:purge -a areburg-test2 --confirm areburg-test2
+
+
+#remove github
+git remote rm heroku
+
+
+
+#check Python version
+(venv) $ python3 --version
+Python 3.9.0
+#check Pandas version
+$ python3
+>>>import pandas as pd
+>>>pd.__version__
+'1.2.3'
+#check Dash version
+$ python3
+>>>import dash
+>>>dash.__version__
+'1.19.0'
