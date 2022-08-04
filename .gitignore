@@ -2,5 +2,7 @@ venv
 *.pyc 
 .DS_Store 
 .env
-Test1/
+data2/
+csv/
 *__pycache__*
+.mapbox_token
